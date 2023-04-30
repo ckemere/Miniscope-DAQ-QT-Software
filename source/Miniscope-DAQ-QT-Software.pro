@@ -100,7 +100,21 @@ win32 {
     # For numpy
     INCLUDEPATH += C:/Users/dbaha/.conda/envs/basepy37/Lib/site-packages/numpy/core/include
 
-} else {
+} 
+unix:!macx {
+    # sudo apt install libopencv-dev qt3d5-dev qt5-qmake qtbase5-dev qtbase5-dev-tools qtdeclarative5-dev python3-numpy
+    # Create "build/" and "build/release/" and call qmake from the "build/" directory
+
+    CONFIG += link_pkgconfig
+    PKGCONFIG += opencv4 python3 python3-embed
+
+    # For numpy
+    INCLUDEPATH += /usr/lib/python3/dist-packages/numpy/core/include
+
+    # We're not running qtcreator, so this informs qmake to put the binary in the "release" dir
+    DESTDIR = \"$$shell_path($$OUT_PWD\\release)\"
+}
+macx {
     CONFIG += link_pkgconfig
     PKGCONFIG += opencv4
 }
