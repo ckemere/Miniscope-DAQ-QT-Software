@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Path=/home/kemerelab/Code/Miniscope-DAQ-QT-Software/build/release/
+Exec=/home/kemerelab/Code/Miniscope-DAQ-QT-Software/build/release/Miniscope-DAQ-QT-Software
+Name=Miniscope DAQ
+Icon=/home/kemerelab/Code/Miniscope-DAQ-QT-Software/source/miniscope_icon.ico
