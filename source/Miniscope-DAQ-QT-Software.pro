@@ -103,6 +103,7 @@ win32 {
 } 
 unix:!macx {
     # sudo apt install libopencv-dev qt3d5-dev qt5-qmake qtbase5-dev qtbase5-dev-tools qtdeclarative5-dev python3-numpy
+    # sudo apt install qml-module-qtquick-controls qml-module-qtquick-controls2 qml-module-qtquick-dialogs
     # Create "build/" and "build/release/" and call qmake from the "build/" directory
 
     CONFIG += link_pkgconfig
